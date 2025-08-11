@@ -40,6 +40,8 @@ Training/
 Install dependencies using:
 ```bash
 pip install tensorflow matplotlib scikit-learn
+pip install numpy
+pip install matplotlib
 ```
 
 ---
@@ -74,7 +76,7 @@ pip install tensorflow matplotlib scikit-learn
 ## 🚀 Usage
 1. **Update the dataset path** in:
 ```python
-data_path = r"C:/path/to/your/Training"
+data_path = r"C:/ML-final-project/fruits-360-3-body-problem/Training"
 ```
 2. **Run the script**:
 ```bash
@@ -90,13 +92,9 @@ After training, the script outputs:
 - **Confusion matrix**
 - **Training accuracy/loss plots**
 
-Example Accuracy/Loss Curves:  
-*(Replace with your generated plots)*  
+Accuracy/Loss Curves:  
 ![Accuracy and Loss](docs/training_curves.png)
 
-Example Confusion Matrix:  
-*(Replace with your generated plots)*  
-![Confusion Matrix](docs/confusion_matrix.png)
 
 ---
 
@@ -105,22 +103,18 @@ Example Confusion Matrix:
 Classification Report:
               precision    recall  f1-score   support
 
-       Apple       0.98      0.99      0.98       400
-      Cherry       0.97      0.96      0.97       400
-     Tomatoe       0.98      0.97      0.98       400
+       Apple       0.67      0.88      0.76       3198
+      Cherry       0.91      0.65      0.75       1762
+     Tomatoe       0.77      0.57      0.65       1999
 
-Accuracy: 0.9775
+Accuracy: 0.73
 ```
 
 ---
 
 ## 🔮 Possible Improvements
 - Add more fruit categories for multi-class classification.
-- Experiment with transfer learning (e.g., EfficientNet, MobileNetV2).
 - Perform hyperparameter tuning with tools like Optuna or KerasTuner.
-- Deploy as a web app using Flask or Streamlit.
+- Improve recall for Cherry and Tomatoe by collecting more diverse training samples and balancing class representation.
+- Consider adjusting data augmentation or model architecture to better capture class-specific features and reduce misclassification.
 
----
-
-## 📄 License
-This project is released under the MIT License.
