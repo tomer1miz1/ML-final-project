@@ -93,7 +93,7 @@ After training, the script outputs:
 - **Training accuracy/loss plots**
 
 Accuracy/Loss Curves:  
-![Accuracy and Loss](docs/training_curves.png)
+![Accuracy and Loss](docs/training_curves.PNG)
 
 
 ---
